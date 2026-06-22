@@ -1,0 +1,276 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --dark-blue: #031926;
+  --olive-green: #468189;
+  --light-emerald: #77aca2;
+  --light-olive-green: #9dbebb;
+  --sand: #f4e9cd;
+  --text-dark: #031926;
+  --shadow: 0 10px 24px rgba(3, 25, 38, 0.16);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--white);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.site-header{
+    background:linear-gradient(
+        135deg,
+        var(--olive-green),
+        var(--dark-blue)
+    );
+    color:white;
+}
+
+.header-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.logo {
+  width: 72px;
+  height: 72px;
+  color: var(--dark-blue);
+  text-decoration: none;
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.title-box h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.title-box p {
+  color: var(--light-emerald);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.menu-button {
+  margin-left: auto;
+  display: none;
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.main-nav {
+  background-color: var(--white);
+  border-bottom: 1px solid rgba(3, 25, 38, 0.15);
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 1rem;
+}
+
+.main-nav a {
+  color: var(--text-dark);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.main-nav a:hover {
+  color: var(--olive-green);
+}
+
+main {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+}
+
+.contact-intro {
+  max-width: 1000px;
+  margin-bottom: 1.5rem;
+}
+
+.contact-intro h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.form-section {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  border: 2px solid var(--olive-green);
+  padding: 1.5rem;
+  background-color: rgba(157, 190, 187, 0.12);
+  box-shadow: var(--shadow);
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  position: absolute;
+  left: -9999px;
+}
+
+label {
+  display: block;
+  margin: 0.9rem 0 0.3rem;
+  font-weight: 700;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 2px solid transparent;
+  background-color: var(--white);
+  padding: 0.9rem;
+  font: inherit;
+  color: var(--text-dark);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--olive-green);
+  box-shadow: 0 0 0 3px rgba(70, 129, 137, 0.25);
+}
+
+textarea {
+  resize: vertical;
+}
+
+.button-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+button {
+  min-width: 160px;
+  border: none;
+  background-color: var(--olive-green);
+  color: var(--white);
+  padding: 0.9rem 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--dark-blue);
+}
+
+.site-footer {
+  text-align: center;
+}
+
+.footer-top {
+  background-color: var(--sand);
+  padding: 1.5rem 1rem;
+}
+
+.footer-top h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-top nav {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.footer-top a {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 700;
+}
+
+.footer-bottom {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  padding: 1rem;
+}
+
+@media (max-width: 700px) {
+  .header-inner {
+    padding: 1rem;
+  }
+
+  .logo {
+    width: 58px;
+    height: 58px;
+    font-size: 1.6rem;
+  }
+
+  .title-box h1 {
+    font-size: 1.6rem;
+  }
+
+  .title-box p {
+    font-size: 1rem;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  main {
+    padding: 1.25rem 1rem;
+  }
+
+  .contact-intro h2 {
+    font-size: 1.4rem;
+  }
+
+  .contact-intro p {
+    font-size: 0.9rem;
+  }
+
+  .contact-form {
+    padding: 1rem;
+  }
+
+  input,
+  textarea {
+    padding: 0.75rem;
+  }
+
+  .button-row {
+    justify-content: center;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .footer-top nav {
+    gap: 1.5rem;
+  }
+}
