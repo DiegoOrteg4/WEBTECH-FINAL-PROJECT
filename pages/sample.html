@@ -4,105 +4,129 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Website Title | Sample Project</title>
-  <link rel="stylesheet" href="../assets/css/sample.css">
-  <link rel="JavaScript" href="../assets/js/sample.js">
+
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-white font-sans leading-relaxed text-[#031926]">
+  <header class="bg-gradient-to-br from-[#468189] to-[#031926] text-white">
+    <section class="mx-auto flex max-w-[1200px] gap-4 p-6 max-[768px]:p-4">
+      <a href="../index.html">
+        <img
+          class="h-[70px] w-[70px] rounded object-contain max-[768px]:h-[55px] max-[768px]:w-[55px]"
+          src="../assets/img/logoG.png"
+          alt="Logo"
+        >
+      </a>
 
-<header class="site-header">
-  <section class="header-inner">
-        <img class="logo" src="../assets/img/logoG.png" alt="Logo"href="../index.html">
-    <section class="title-box">
-      <h1>Final Project Website</h1>
-      <p>Sample</p>
+      <section>
+        <h1 class="text-[clamp(2rem,4vw,4rem)] font-bold uppercase leading-none max-[768px]:text-[1.7rem]">
+          Final Project Website
+        </h1>
+        <p class="text-xl uppercase text-[#f4e9cd] max-[768px]:text-base">
+          Sample
+        </p>
+      </section>
+
+      <button class="ml-auto hidden text-3xl text-white max-[768px]:block" aria-label="Open menu">
+        ☰
+      </button>
     </section>
 
-    <button class="menu-button">☰</button>
-  </section>
-
-  <nav class="main-nav">
-    <a href="../index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="resume.html">Resume</a>
-    <a href="sample.html">Sample</a>
-  </nav>
-</header>
-
-<main>
-
-  <section class="intro">
-    <h2>Project API Ninja</h2>
-
-    <p>
-      This project demonstrates the use of APIs through JavaScript Fetch requests.
-      Users can select an API and retrieve dynamic data from an external source.
-      This example includes a Quote of the Day API and a Password Generator API.
-    </p>
-  </section>
-
-  <section class="api-container">
-        <form>
-          <h2>Select one of the following APIs</h2>
-
-          <fieldset>
-            <legend>Available APIs</legend>
-
-            <label>
-              <input type="checkbox" name="api" value="quote" />
-              Quote Of The Day
-            </label>
-
-            <label>
-              <input type="checkbox" name="api" value="password" />
-              Password Generator
-            </label>
-          </fieldset>
-
-          <fieldset class="password_length">
-
-            <input
-              type="text"
-              id="user_input"
-              name="user_input"
-              placeholder="Introduce Password Length..."
-            />
-          </fieldset>
-
-          <button class="api-button" type="button" id="fetchButton">
-            Get
-          </button>
-          <br/>
-          <br/> 
-
-          <output id="output">
-            Select an API.
-          </output>
-        </form>
-  </section>
-
-
-  
-</main>
-
-<footer class="site-footer">
-
-  <section class="footer-top">
-    <h2>Title</h2>
-
-    <nav>
-      <a href="contact.html">Contact</a>
-      <a href="about.html">About</a>
-      <a href="#">Copyright</a>
+    <nav class="flex justify-center gap-12 border-b border-gray-300 bg-white p-4 max-[768px]:hidden">
+      <a class="font-semibold text-[#031926] hover:text-[#468189]" href="../index.html">Home</a>
+      <a class="font-semibold text-[#031926] hover:text-[#468189]" href="about.html">About</a>
+      <a class="font-semibold text-[#031926] hover:text-[#468189]" href="contact.html">Contact</a>
+      <a class="font-semibold text-[#031926] hover:text-[#468189]" href="resume.html">Resume</a>
+      <a class="font-semibold text-[#031926] hover:text-[#468189]" href="sample.html">Sample</a>
     </nav>
-  </section>
+  </header>
 
-  <section class="footer-bottom">
-    <p> 2026 Website Title. All rights reserved.</p>
-  </section>
+  <main class="mx-auto max-w-[1200px] p-8 max-[768px]:p-4">
+    <section class="mb-8">
+      <h2 class="mb-2 text-3xl font-bold max-[768px]:text-2xl">
+        Project API Ninja
+      </h2>
 
-</footer>
+      <p>
+        This project demonstrates the use of APIs through JavaScript Fetch requests.
+        Users can select an API and retrieve dynamic data from an external source.
+        This example includes a Quote of the Day API and a Password Generator API.
+      </p>
+    </section>
+
+    <section class="mx-auto my-8 grid max-w-[1000px] grid-cols-1 gap-8 rounded-xl border-2 border-[#9DBEBB] bg-white p-8 shadow-xl max-[768px]:p-4">
+      <form class="mx-auto max-w-[700px]">
+        <h2 class="mb-8 text-center text-2xl font-bold uppercase text-[#031926]">
+          Select one of the following APIs
+        </h2>
+
+        <fieldset class="mb-6 border-0">
+          <legend class="mb-4 font-bold text-[#031926]">
+            Available APIs
+          </legend>
+
+          <label class="mb-4 flex cursor-pointer items-center gap-3 font-semibold">
+            <input class="h-[18px] w-[18px] accent-[#468189]" type="checkbox" name="api" value="quote">
+            Quote Of The Day
+          </label>
+
+          <label class="mb-4 flex cursor-pointer items-center gap-3 font-semibold">
+            <input class="h-[18px] w-[18px] accent-[#468189]" type="checkbox" name="api" value="password">
+            Password Generator
+          </label>
+        </fieldset>
+
+        <fieldset class="mb-6 border-0">
+          <legend class="sr-only">
+            Password length
+          </legend>
+
+          <input
+            class="w-full rounded-lg border-2 border-[#9DBEBB] p-4 text-base focus:border-[#468189] focus:outline-none focus:ring-4 focus:ring-[#468189]/15"
+            type="text"
+            id="user_input"
+            name="user_input"
+            placeholder="Introduce Password Length..."
+          >
+        </fieldset>
+
+        <button
+          class="mx-auto block w-[180px] rounded-lg bg-gradient-to-br from-[#468189] to-[#77ACA2] p-4 font-bold uppercase text-white transition hover:-translate-y-1 hover:from-[#031926] hover:to-[#468189] max-[768px]:w-full"
+          type="button"
+          id="fetchButton"
+        >
+          Get
+        </button>
+
+        <output
+          class="mx-auto mt-8 block min-h-[120px] max-w-[700px] rounded-lg border-l-[6px] border-[#468189] bg-[#F4E9CD] p-6 text-lg leading-relaxed max-[768px]:text-base"
+          id="output"
+        >
+          Select an API.
+        </output>
+      </form>
+    </section>
+  </main>
+
+  <footer class="text-center">
+    <section class="bg-[#F4E9CD] p-6">
+      <h2 class="mb-2 font-bold uppercase">
+        Title
+      </h2>
+
+      <nav class="flex justify-center gap-12 max-[768px]:flex-wrap max-[768px]:gap-4">
+        <a class="text-[#031926] hover:text-[#468189]" href="contact.html">Contact</a>
+        <a class="text-[#031926] hover:text-[#468189]" href="about.html">About</a>
+        <a class="text-[#031926] hover:text-[#468189]" href="#">Copyright</a>
+      </nav>
+    </section>
+
+    <section class="bg-[#031926] p-4 text-white">
+      <p>2026 Website Title. All rights reserved.</p>
+    </section>
+  </footer>
+
   <script src="../assets/js/sample.js"></script>
 </body>
 </html>

@@ -4,81 +4,106 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Website Title | About</title>
-  <link rel="stylesheet" href="../assets/css/about.css" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-  <header class="site-header">
-    <section class="header-inner">
-        <img class="logo" src="../assets/img/logoG.png" alt="Logo"href="../index.html">
-      <section class="title-box">
-        <h1>Final Project Website</h1>
-        <p>About</p>
+<body class="bg-white text-[#031926] font-sans leading-relaxed">
+  <header class="bg-gradient-to-br from-[#468189] to-[#031926] text-white">
+    <section class="mx-auto flex max-w-[1180px] gap-4 px-5 py-6">
+      <a href="../index.html">
+        <img class="h-[72px] w-[72px] object-contain" src="../assets/img/logoG.png" alt="Logo">
+      </a>
+
+      <section>
+        <h1 class="text-[clamp(2rem,5vw,4rem)] font-extrabold uppercase leading-none tracking-wide">
+          Final Project Website
+        </h1>
+        <p class="text-xl font-bold uppercase text-[#77aca2]">
+          About
+        </p>
       </section>
 
-      <button class="menu-button" aria-label="Open menu">☰</button>
+      <button class="ml-auto hidden text-3xl text-white" aria-label="Open menu">
+        ☰
+      </button>
     </section>
 
-    <nav class="main-nav">
-      <a href="../index.html">Home</a>
-      <a href="contact.html">Contact</a>
-      <a href="resume.html">Resume</a>
-      <a href="projects.html">Projects</a>
-      <a href="sample.html">Sample</a>
+    <nav class="flex justify-center gap-12 border-b border-[#031926]/15 bg-white p-4">
+      <a class="text-lg font-bold text-[#031926] hover:text-[#468189]" href="../index.html">Home</a>
+      <a class="text-lg font-bold text-[#031926] hover:text-[#468189]" href="contact.html">Contact</a>
+      <a class="text-lg font-bold text-[#031926] hover:text-[#468189]" href="resume.html">Resume</a>
+      <a class="text-lg font-bold text-[#031926] hover:text-[#468189]" href="projects.html">Projects</a>
+      <a class="text-lg font-bold text-[#031926] hover:text-[#468189]" href="sample.html">Sample</a>
     </nav>
   </header>
 
-  <main>
-    <section class="intro-section">
-      <h2>Intro Purpose of the website</h2>
-      <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  <main class="mx-auto max-w-[1180px] px-5 py-8">
+    <section class="mb-6">
+      <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold">
+        Intro Purpose of the website
+      </h2>
+      <p class="max-w-[1000px]">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
       </p>
     </section>
 
-    <section class="about-section">
-      <article class="about-text">
+    <section class="mt-6 grid grid-cols-1 items-center gap-6 md:grid-cols-2">
+      <article class="rounded-md border-l-[5px] border-[#468189] bg-[#9dbebb]/20 p-6">
         <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
       </article>
 
-      <figure class="about-image">
-        <img src="../assets/img/WebDev.jpg" alt="About section image placeholder" />
+      <figure class="min-h-[230px] overflow-hidden rounded-lg bg-gradient-to-br from-[#9dbebb] to-[#77aca2] shadow-xl">
+        <img class="block h-full min-h-[230px] w-full object-cover" src="../assets/img/WebDev.jpg" alt="About section image placeholder">
       </figure>
 
-      <figure class="about-image">
-        <img src="../assets/img/guiness.jpg" alt="About section image placeholder" />
+      <figure class="min-h-[230px] overflow-hidden rounded-lg bg-gradient-to-br from-[#9dbebb] to-[#77aca2] shadow-xl">
+        <img class="block h-full min-h-[230px] w-full object-cover" src="../assets/img/guiness.jpg" alt="About section image placeholder">
       </figure>
 
-      <article class="about-text">
+      <article class="rounded-md border-l-[5px] border-[#468189] bg-[#9dbebb]/20 p-6">
         <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
       </article>
     </section>
 
-    <section class="contact-callout">
+    <section class="mt-6 grid grid-cols-1 items-center gap-6 md:grid-cols-[1fr_auto]">
       <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       </p>
 
-      <a href="contact.html" class="contact-button">Contact</a>
+      <a
+        href="contact.html"
+        class="min-w-[180px] rounded bg-[#468189] px-8 py-4 text-center font-bold uppercase text-white shadow-xl hover:bg-[#031926]"
+      >
+        Contact
+      </a>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <section class="footer-top">
-      <h2>Final Project Website</h2>
-      <nav>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
-        <a href="#">Copyright</a>
+  <footer class="text-center">
+    <section class="bg-[#f4e9cd] px-4 py-6">
+      <h2 class="mb-2 text-3xl font-bold uppercase">
+        Final Project Website
+      </h2>
+
+      <nav class="flex justify-center gap-12">
+        <a class="font-bold text-[#031926] hover:text-[#468189]" href="contact.html">Contact</a>
+        <a class="font-bold text-[#031926] hover:text-[#468189]" href="about.html">About</a>
+        <a class="font-bold text-[#031926] hover:text-[#468189]" href="#">Copyright</a>
       </nav>
     </section>
 
-    <section class="footer-bottom">
-      <p> 2026 Website Title. All rights reserved.</p>
+    <section class="bg-[#031926] p-4 text-white">
+      <p>2026 Website Title. All rights reserved.</p>
     </section>
   </footer>
 </body>

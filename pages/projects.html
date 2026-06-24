@@ -4,86 +4,108 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Website Title | Projects</title>
-  <link rel="stylesheet" href="../assets/css/projects.css" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-  <header class="site-header">
-    <section class="header-inner">
-        <img class="logo" src="../assets/img/logoG.png" alt="Logo"href="../index.html">
-      <section class="title-box">
-        <h1>Final Project Website</h1>
-        <p>Projects</p>
+<body class="bg-white font-sans leading-relaxed text-[#031926]">
+  <header class="bg-gradient-to-br from-[#468189] to-[#031926] text-white">
+    <section class="mx-auto flex max-w-[1180px] gap-4 px-5 py-6 max-[700px]:p-4">
+      <a href="../index.html">
+        <img class="h-[72px] w-[72px] object-contain max-[700px]:h-[58px] max-[700px]:w-[58px]" src="../assets/img/logoG.png" alt="Logo">
+      </a>
+
+      <section>
+        <h1 class="text-[clamp(2rem,5vw,4rem)] font-extrabold uppercase leading-none tracking-wide max-[700px]:text-[1.6rem]">
+          Final Project Website
+        </h1>
+        <p class="text-xl font-bold uppercase text-[#77aca2] max-[700px]:text-base">
+          Projects
+        </p>
       </section>
 
-      <button class="menu-button" aria-label="Open menu">☰</button>
+      <button class="ml-auto hidden text-3xl text-white max-[700px]:block" aria-label="Open menu">
+        ☰
+      </button>
     </section>
 
-    <nav class="main-nav">
-      <a href="../index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="resume.html">Resume</a>
-      <a href="sample.html">Sample</a>
+    <nav class="flex justify-center gap-12 border-b border-[#031926]/15 bg-white p-4 max-[700px]:hidden">
+      <a class="text-lg font-bold text-[#031926] hover:text-[#468189]" href="../index.html">Home</a>
+      <a class="text-lg font-bold text-[#031926] hover:text-[#468189]" href="about.html">About</a>
+      <a class="text-lg font-bold text-[#031926] hover:text-[#468189]" href="contact.html">Contact</a>
+      <a class="text-lg font-bold text-[#031926] hover:text-[#468189]" href="resume.html">Resume</a>
+      <a class="text-lg font-bold text-[#031926] hover:text-[#468189]" href="sample.html">Sample</a>
     </nav>
   </header>
 
-  <main>
-    <section class="portfolio-intro">
-      <h2>Portfolio</h2>
-      <p>
-   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  <main class="mx-auto max-w-[1180px] px-5 py-8 max-[700px]:px-4 max-[700px]:py-5">
+    <section class="mb-6 max-w-[1000px]">
+      <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold uppercase max-[700px]:text-[1.4rem]">
+        Portfolio
+      </h2>
+      <p class="max-[700px]:text-sm">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </section>
 
-    <section class="projects-section">
-      <h2>Projects</h2>
+    <section>
+      <h2 class="mb-3 text-2xl font-bold">
+        Projects
+      </h2>
 
-      <section class="projects-grid">
-        <a href="sample.html" class="project-card">
-          <h3>Sample Project</h3>
+      <section class="grid grid-cols-1 gap-4 md:grid-cols-6">
+        <a href="sample.html" class="flex min-h-[190px] flex-col justify-end rounded-lg bg-gradient-to-br from-[#468189] to-[#77aca2] p-6 text-white shadow-xl transition hover:-translate-y-1 hover:from-[#031926] hover:to-[#468189] md:col-span-2">
+          <h3 class="mb-1 font-bold uppercase">Sample Project</h3>
           <p>Working Ninja API form example.</p>
         </a>
 
-        <a href="#" class="project-card">
-          <h3>Card Two</h3>
-          <p> </p>
+        <a href="#" class="flex min-h-[190px] flex-col justify-end rounded-lg bg-gradient-to-br from-[#468189] to-[#77aca2] p-6 text-white shadow-xl transition hover:-translate-y-1 hover:from-[#031926] hover:to-[#468189] md:col-span-2">
+          <h3 class="mb-1 font-bold uppercase">Card Two</h3>
+          <p></p>
         </a>
 
-        <a href="#" class="project-card">
-          <h3>Card Three</h3>
-          <p> </p>
+        <a href="#" class="flex min-h-[190px] flex-col justify-end rounded-lg bg-gradient-to-br from-[#468189] to-[#77aca2] p-6 text-white shadow-xl transition hover:-translate-y-1 hover:from-[#031926] hover:to-[#468189] md:col-span-2">
+          <h3 class="mb-1 font-bold uppercase">Card Three</h3>
+          <p></p>
         </a>
 
-        <a href="#" class="project-card wide-card">
-          <h3>Card Four</h3>
-          <p> </p>
+        <a href="#" class="flex min-h-[190px] flex-col justify-end rounded-lg bg-gradient-to-br from-[#468189] to-[#77aca2] p-6 text-white shadow-xl transition hover:-translate-y-1 hover:from-[#031926] hover:to-[#468189] md:col-span-3">
+          <h3 class="mb-1 font-bold uppercase">Card Four</h3>
+          <p></p>
         </a>
 
-        <a href="#" class="project-card wide-card">
-          <h3>Card Five</h3>
+        <a href="#" class="flex min-h-[190px] flex-col justify-end rounded-lg bg-gradient-to-br from-[#468189] to-[#77aca2] p-6 text-white shadow-xl transition hover:-translate-y-1 hover:from-[#031926] hover:to-[#468189] md:col-span-3">
+          <h3 class="mb-1 font-bold uppercase">Card Five</h3>
           <p></p>
         </a>
       </section>
     </section>
 
-    <section class="contact-row">
-      <a href="contact.html" class="contact-button">Contact</a>
+    <section class="mt-6 flex justify-end max-[700px]:justify-center">
+      <a href="contact.html" class="min-w-[170px] rounded bg-[#468189] px-8 py-4 text-center font-bold uppercase text-white shadow-xl hover:bg-[#031926] max-[700px]:w-full">
+        Contact
+      </a>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <section class="footer-top">
-      <h2>Final Project Website</h2>
-      <nav>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
-        <a href="#">Copyright</a>
+  <footer class="text-center">
+    <section class="bg-[#f4e9cd] px-4 py-6">
+      <h2 class="mb-2 text-3xl font-bold uppercase">
+        Final Project Website
+      </h2>
+
+      <nav class="flex justify-center gap-12 max-[700px]:gap-6">
+        <a class="font-bold text-[#031926] hover:text-[#468189]" href="contact.html">Contact</a>
+        <a class="font-bold text-[#031926] hover:text-[#468189]" href="about.html">About</a>
+        <a class="font-bold text-[#031926] hover:text-[#468189]" href="#">Copyright</a>
       </nav>
     </section>
 
-    <section class="footer-bottom">
-      <p> 2026 Website Title. All rights reserved.</p>
+    <section class="bg-[#031926] p-4 text-white">
+      <p>2026 Website Title. All rights reserved.</p>
     </section>
   </footer>
 </body>
